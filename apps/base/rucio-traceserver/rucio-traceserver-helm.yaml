@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: rucio-server
-      version: "39.0.0"
+      version: "40.0.0"
       sourceRef:
         kind: HelmRepository
         name: rucio
@@ -29,3 +29,7 @@ spec:
       name: rucio-secrets
       valuesKey: db_string
       targetPath: config.database.default
+    - kind: Secret
+      name: rucio-secrets
+      valuesKey: trace_password
+      targetPath: config.trace.password

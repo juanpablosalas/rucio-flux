@@ -29,6 +29,9 @@ secretMounts:
   - secretFullName: server-debug-patch
     mountPath: /patch/server-debug.patch
     subPath: server-debug.patch
+  - secretFullName: no-json-patch
+    mountPath: /patch/no-json.patch
+    subPath: no-json.patch
 
 optional_config:
   rucio_ca_path: "/cvmfs/grid.cern.ch/etc/grid-security/certificates/"
@@ -68,7 +71,7 @@ serverResources:
   requests:
     memory: 500Mi
   limits:
-    memory: 1500Mi
+    memory: 4500Mi
 
 config:
   common:
