@@ -17,3 +17,8 @@ secretGenerator:
       disableNameSuffixHash: true
     files:
       -  server-debug.patch
+  - name: fts4-tape-patch
+    options:
+      disableNameSuffixHash: true
+    files:
+      -  fts4-tape.patch
